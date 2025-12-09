@@ -1,5 +1,10 @@
 transformers
+sentence_transformers
 torch
-huggingface_hub[hf_xet]
+datasets
+protobuf
+# huggingface_hub[hf_xet]
+hf_xet
 fastapi[standard]
 accelerate
+pandas
