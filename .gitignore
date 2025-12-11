@@ -6,3 +6,7 @@
 **/myenv/*
 **/__pycache__/*
 **/.ipynb_checkpoints/*
+
+
+# Specific folders to ignore
+notebooks/parser/jd_tf_model/
