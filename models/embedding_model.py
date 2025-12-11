@@ -19,9 +19,8 @@ class EmbeddingModel(BaseModel):
     model = None
     tokenizer = None
 
-    def __init__(self, delay: float = 0.1):
+    def __init__(self):
         super().__init__()
-        self.delay = delay
 
     def load(self) -> None:
         print('Loading Embedding Model')
