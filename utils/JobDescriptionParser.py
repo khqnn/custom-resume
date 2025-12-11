@@ -88,7 +88,7 @@ def predict_with_model(texts, tokenizer, model, label_encoder, device=None, max_
                     # fallback: if label_encoder not consistent, try to use model.config.id2label
                     id2label = getattr(model.config, "id2label", None)
                     label_str = id2label.get(str(idx), id2label.get(idx, f"LABEL_{idx}"))
-                preds.append({"label": label_str, "scare": float(prob_row[idx])})
+                preds.append({"label": label_str, "score": float(prob_row[idx])})
                 
                 
             results.append({"text": text, "predictions": preds})
